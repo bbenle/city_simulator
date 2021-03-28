@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusFragment">
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CityName"
+        app:layout_constraintTop_toBottomOf="@id/detailsButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/money"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        app:layout_constraintTop_toBottomOf="@id/cityName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/money"
+        app:layout_constraintBottom_toTopOf="@id/population"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Money"
+        app:layout_constraintTop_toBottomOf="@id/cityName"
+        app:layout_constraintRight_toLeftOf="@id/income"
+        app:layout_constraintBottom_toTopOf="@id/employment"
+        app:layout_constraintLeft_toRightOf="@id/timeButton"/>
+
+    <TextView
+        android:id="@+id/population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Population"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/employment"/>
+
+    <TextView
+        android:id="@+id/income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        app:layout_constraintTop_toBottomOf="@id/cityName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/temperature"
+        app:layout_constraintLeft_toRightOf="@id/money"/>
+
+    <TextView
+        android:id="@+id/employment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employment"
+        app:layout_constraintTop_toBottomOf="@id/money"
+        app:layout_constraintLeft_toRightOf="@id/population"
+        app:layout_constraintRight_toLeftOf="@id/temperature"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        app:layout_constraintTop_toBottomOf="@id/income"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/employment"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/detailsButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cityName"/>
+
+    <Button
+        android:id="@+id/detailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/demolishButton"
+        app:layout_constraintLeft_toRightOf="@id/timeButton"
+        app:layout_constraintBottom_toTopOf="@id/cityName"/>
+
+    <Button
+        android:id="@+id/demolishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demolish"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/resetButton"
+        app:layout_constraintLeft_toRightOf="@id/detailsButton"
+        app:layout_constraintBottom_toTopOf="@id/cityName" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/demolishButton"
+        app:layout_constraintBottom_toTopOf="@id/cityName" />
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
